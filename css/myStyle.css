@@ -1,0 +1,105 @@
+
+/*=============================================
+logo
+=============================================*/
+
+.log{
+  width: 65px;
+}
+.log img{
+  width: 58px;
+  position: absolute;
+  top: -27px;
+}
+@media (min-width:1200px){
+    .circulo {
+        width: 145px;
+        height: 135px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        margin-top: -33PX;
+        background:
+        #00B2E5;
+        position: absolute;
+        z-index: 10;
+        margin-left: -5%;
+
+    }
+    .logo_svg {
+        width: 125px;
+        height: 125px;
+        margin-top: -33px;
+        margin-left: 1px;
+        position: absolute;
+        z-index: 10;
+    }
+
+  .log{
+    display: none;
+  }
+}
+
+@media (max-width:1199px) and (min-width:992px){
+  .circulo {
+    width: 140px;
+    height: 130px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -35PX;
+    background: #00B2E5;
+    position: absolute;
+    z-index: 10;
+    margin-left: -5%;
+
+  }
+  .logo_svg {
+      width: 120px;
+      height: 120px;
+      margin-top: -35px;
+      margin-left: 2px;
+      position: absolute;
+      z-index: 10;
+  }
+  .log{
+    display: none;
+  }
+
+}
+
+@media (max-width:991px) and (min-width:768px){
+
+  .circulo {
+    width: 120px;
+    height: 113px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -35PX;
+    background: #00B2E5;
+    position: absolute;
+    z-index: 10;
+    margin-left: -5%;
+
+  }
+  .logo_svg{
+  	width: 108px;
+  	height: 108px;
+  	margin-top: -35px;
+  	margin-left: 0px;
+  	position: absolute;
+  	z-index: 10;
+  }
+  .log{
+    display: none;
+  }
+}
+
+
+@media (max-width:767px){
+  .circulo,.logo_svg,.dis_logo,.circulo{
+    display: none;
+  }
+
+}

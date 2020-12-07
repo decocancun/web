@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+
+
+
+
+/*=============================================
+  Menu navbar
+=============================================*/
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: $colorPrincipal;
+}
+  .site-navbar .site-navigation .site-menu > li > a:hover {
+    color: $colorBlanco !important;
+}
+
+.site-navbar .site-navigation .site-menu > li > a {
+    color: #fff !important;
+    font-family: "LibelSuit"!important;
+    letter-spacing: 1.5px!important;
+    font-weight: 300!important;
+    font-size: 1.1rem!important;
+}
+.site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover{
+    background-color: #ccc!important;
+}
+
+@media (max-width:767px){
+    .site-mobile-menu .site-nav-wrap > li > a{
+        font-family: "LibelSuit"!important;
+        letter-spacing: 0.8px!important;
+        font-size: 1.2rem!important;
+        color: #212529cc!important;
+    }
+    .site-mobile-menu .site-nav-wrap a{
+        font-family: "LibelSuit"!important;
+        letter-spacing: 0.5px!important;
+        font-size: 1rem!important; 
+        color: #212529cc!important;  
+    }
+}

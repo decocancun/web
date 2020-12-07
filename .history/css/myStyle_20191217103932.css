@@ -1,0 +1,249 @@
+@font-face{
+  
+  font-family: "LibelSuit";
+  src: url("../fonts/libel-suit-rg-webfont.eot");
+  src: url("../fonts/libel-suit-rg-webfont.eot?#amoLibelSuit") format("embedded-opentype"),
+  url("../fonts/libel-suit-rg-webfont.woff") format("woff"),
+  url("../fonts/libel-suit-rg-webfont.ttf") format("truetype"),
+  url("../fonts/libel-suit-rg-webfont.svg#libel_suitregular") format("svg");
+}
+
+
+
+/*=============================================
+  Menu navbar
+=============================================*/
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #00b2e5;
+  /*background: #011015c4;*/
+
+}
+.site-navbar .site-navigation .site-menu > li > a:hover {
+  color: #fff !important;
+
+}
+
+
+
+
+@media (min-width:1200px){
+  /*=============================================
+  menu galeria hover de secction
+=============================================*/
+  .galeria{
+    margin-top: 70px;
+  }
+  .sub-menu ul li span a{
+      background-color: #00b2e5;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 3px;
+      
+  }
+  .site-section-heading {
+    font-size: 3rem; 
+  } 
+  .site-section-heading.text-center:after {
+    width:410px;
+  }
+  .iconos_img li img{
+
+    width: 110PX;
+    margin: 25px;
+    
+  }
+  .descrip_slide{
+    display: none;
+  }
+  .title_centerpieces h1{
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width:1199px) and (min-width:992px){
+  /*=============================================
+  menu galeria hover de secction
+  =============================================*/
+  .galeria{
+    margin-top: 65px;
+
+  }
+  .sub-menu ul li span a{
+      background-color: #757575;
+      color: white;
+      font-size: 18px;
+      padding: 8px;
+      border-radius: 3px;
+      
+  }
+  .renders_1{
+  width: 100%;
+  height: 555px;
+  }
+  .site-section-heading.text-center:after {
+    width:250px;
+  }
+  .iconos_img li img{
+    width: 150PX;
+    margin: 25px;
+    
+  }
+  .circulo {
+    width: 109px;
+    height: 109px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -35PX;
+    background: #00B2E5;
+    position: absolute;
+    z-index: 10;
+    margin-left: -5%;
+    
+  }
+  .logo_img{
+  max-width: 101px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -3px;
+  margin-top: -31px;
+  }
+
+
+}
+
+@media (max-width:991px) and (min-width:768px){
+  .circulo {
+    width: 109px;
+    height: 109px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -35PX;
+    background: #00B2E5;
+    position: absolute;
+    z-index: 10;
+    margin-left: -5%;
+    
+  }
+  .logo_img{
+  max-width: 101px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -1px;
+  margin-top: -31px;
+  }
+
+}
+
+
+@media (max-width:767px){
+  /*=============================================
+  menu galeria hover de secction
+  =============================================*/
+  .site-section-heading{
+    font-size: 25px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+  .galeria{
+    margin-top: 65px;
+
+  }
+  .overlay span{
+    font-size: 18px;
+  }
+
+  .cont_gl {
+      margin-top: 90px;
+  }
+    .sub-menu ul li{
+      display: inline-block;
+      padding-top: 10px;
+
+    }
+    .sub-menu ul{
+
+        list-style: none;
+        text-align: center;
+    }
+
+  .sub-menu ul li span a{
+    background-color: #757575;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .renders_1{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+  }
+  .descrip_slide{
+    display: none;
+  }
+  .site-section-heading.text-center:after {
+    width:250px;
+  }
+  .iconos_img{
+    margin:0; padding: 0; border:0;
+    text-align: center;
+  }
+  .iconos_img li img{
+    width: 130PX;
+    margin: 25px;
+  }
+  .content_desing h2 .lead{
+    text-align: center;
+  }
+  .card{
+    margin-top: 10px;
+  }
+  .mb-3{
+    margin-bottom: 0rem!important;
+  }
+  .circulo,.logo_img,.dis_logo,.circulo{
+    display: none;
+  }
+  .log{
+    display: block;
+  }
+
+  #slider,#event_slide,#event_imge,#slide_ceremony{
+    display: none;
+  }
+  #title_event{
+    font-size: 30px;
+  }
+  #certer_title{
+    font-size: 35px;
+  }
+  .title-contact h1{
+    font-size: 25px;
+  }
+
+  .title-ceremony{
+    margin-top: 20px;
+  }
+
+  .tz-gallery{
+    margin-bottom: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+

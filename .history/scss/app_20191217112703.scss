@@ -1,0 +1,30 @@
+@font-face{
+    font-family: "LibelSuit";
+    src: url("../fonts/libel-suit-rg-webfont.eot");
+    src: url("../fonts/libel-suit-rg-webfont.eot?#amoLibelSuit") format("embedded-opentype"),
+    url("../fonts/libel-suit-rg-webfont.woff") format("woff"),
+    url("../fonts/libel-suit-rg-webfont.ttf") format("truetype"),
+    url("../fonts/libel-suit-rg-webfont.svg#libel_suitregular") format("svg");
+}
+
+.site-navbar .site-navigation .site-menu > li > a {
+    color: #fff !important;
+    font-family: "LibelSuit"!important;
+    letter-spacing: 2px!important;
+    font-weight: 300!important;
+    font-size: 1.1rem!important;
+}
+@media (max-width:767px){
+    .site-mobile-menu .site-nav-wrap > li > a{
+        font-family: "LibelSuit"!important;
+        letter-spacing: 0.8px!important;
+        font-size: 1rem!important;
+        color: #212529cc!important;
+    }
+    .site-mobile-menu .site-nav-wrap a{
+        font-family: "LibelSuit"!important;
+        letter-spacing: 0.8px!important;
+        font-size: 1rem!important; 
+        color: #212529cc!important;  
+    }
+}

@@ -1,0 +1,398 @@
+
+@font-face {
+    font-family: 'Dekar';
+    font-weight: bold;
+    src: url('../fonts/Dekar.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../fonts/Mosetserrat/Montserrat-SemiBold.otf');
+}
+
+html,body{
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    height:100%; 
+    width:100%; 
+    margin: 0px; 
+    padding: 0px; 
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imagen-1{
+    width:50%;
+    height:50%;	
+}
+.imagen-1 img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat center;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
+}
+.fondoTransparente{
+    background-color: rgba(0, 0, 0, 0.993);
+    width:100%;
+    height:100%;
+    opacity:0.5;
+    position:absolute;
+    z-index:1;
+}
+.menu{
+	position:absolute;
+	z-index:10;
+    width:100%;
+    margin-left: -.5rem;
+}
+/*=============================================
+animacion de la imagen
+=============================================*/
+.imagen-1 img{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: imageAnimation 9s linear infinite 0s;
+    -moz-animation: imageAnimation 9s linear infinite 0s;
+    -o-animation: imageAnimation 9s linear infinite 0s;
+    -ms-animation: imageAnimation 9s linear infinite 0s;
+    animation: imageAnimation 9s linear infinite 0s; 
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0.1;
+    animation-timing-function: ease-in; }
+    8% { opacity: 0.1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 0.1 }
+    25% { opacity: 1 }
+    50% { opacity: 1 }
+    70% { opacity: 1 }
+    90% { opacity: 1 }
+    95% { opacity: 1 }
+    98% { opacity: 1 }
+    100% { opacity: 0.1 }
+}
+/* Menus textos*/
+#corporate{
+	position:absolute;
+	z-index:9;
+	left:0px;
+	top:0px;
+	opacity:0;
+	animation:corporate 0.5s linear;
+	animation-delay:6s;
+	animation-fill-mode:forwards;
+	background-color:transparent;
+}
+#about{
+	position:absolute;
+	z-index:9;
+	left:0px;
+	top:0px;
+	opacity:0;
+	animation:about 0.5s linear;
+	animation-delay:6s;
+	animation-fill-mode:forwards;
+    background-color:transparent;
+}
+
+/* #wedding{
+	position:absolute;
+	z-index:9;
+	left:0px;
+	top:0px;
+	opacity:0;
+	animation:wedding 0.5s linear;
+	animation-delay:6s;
+	animation-fill-mode:forwards;
+	background-color:transparent;
+} */
+
+#contact{
+	position:absolute;
+	z-index:9;
+	left:0px;
+    top:0px;
+	opacity:0;
+	animation:contact 0.5s linear;
+	animation-delay:6s;
+	animation-fill-mode:forwards;
+	background-color:transparent;
+}
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px){
+
+    .logo_ini{
+        position:absolute;
+        z-index:10;
+        width:20%;
+        margin-top:15%;
+        margin-left:41%;
+        animation:animacion 3s linear;
+        animation-delay:3s;
+        animation-fill-mode:forwards;
+        background-color:transparent;
+    }
+    @keyframes animacion{
+        from { width:20%; height:auto; margin-left:41%; margin-top:15%;   }
+        25% {  width:21%; height:auto;}
+        50% {  width:23%; height:auto;}
+        75% {  width:24%; height:auto;}
+        to {   width:25%; height:auto; margin-left:-1.1%; margin-top:-7.9%; }
+    }
+
+
+    .icono_index a{
+        text-decoration: none;
+    }
+    .icono_index img{
+        width: 22px;
+        float: left;
+        margin-top: 13px;
+    }
+    .icono_index span{
+        font-family: 'Montserrat-SemiBold';
+        letter-spacing: 0rem;
+        list-style: none;
+        color:#ffffff;
+        font-size: 1.5rem;
+        margin-left: 5px;
+        font-weight: 600;
+        border-radius: 5px;
+        box-shadow: 0 12px 12px -3px rgba(0, 0, 0, 0.603), 0 8px 10px -5px rgba(3, 179, 248, 0.876);
+        padding: .5rem;
+        
+    }
+    .icono_index span:hover{
+        box-shadow: 0 12px 12px -3px rgba(0, 0, 0, 0.603);
+        
+    }
+    .icono_index span:hover{
+        color:rgba(29,179,231,1.00);
+    }
+
+    @keyframes  corporate{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+            to { margin-left:25%; margin-top:1%; width:auto; height:auto; opacity:1;}
+        }
+    @keyframes about{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+            to { margin-left:24.8%; margin-top:6.5%; width:auto; height:auto; opacity:1;}
+        }
+    /* @keyframes wedding{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+            to { margin-left:22.5%; margin-top:9.8%; width:auto; height:auto; opacity:1;}
+        } */
+    @keyframes contact{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+            to { margin-left:21.5%; margin-top:12%; width:auto; height:auto; opacity:1;}
+    }
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+    .logo_ini{
+        position:absolute;
+        z-index:10;
+        width:20%;
+        margin-top:25%;
+        margin-left:40%;
+        animation:animacion 3s linear;
+        animation-delay:3s;
+        animation-fill-mode:forwards;
+        background-color:transparent;
+    }
+    @keyframes animacion{
+        from { width:20%; height:auto; margin-left:40%; margin-top:25%;}
+        25% {  width:21%; height:auto;}
+        50% {  width:23%; height:auto;}
+        75% {  width:24%; height:auto;}
+        to {   width:25%; height:auto; margin-left:-1.1%; margin-top:-7%; }
+    }
+
+    .icono_index a{
+        text-decoration: none;
+    }
+    .icono_index img{
+        width: 8px;
+        float: left;
+        margin-top: 10px;
+    }
+    .icono_index span{
+        font-family: 'Montserrat-SemiBold';
+        list-style: none;
+        color:#ffffff;
+        font-size:18px;
+        letter-spacing: 1px;
+        margin-left: 5px;
+        box-shadow: 0 12px 12px -3px rgba(0, 0, 0, 0.603), 0 8px 10px -5px rgba(3, 179, 248, 0.876);
+        padding: .5rem;
+    }
+    .icono_index span:hover{
+        color:rgba(29,179,231,1.00);
+    }
+
+    @keyframes  corporate{
+        from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+        to { margin-left:24.8%; margin-top:1.5%; width:auto; height:auto; opacity:1;}
+    }
+    @keyframes about{
+        from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+        to { margin-left:24%; margin-top:7.8%; width:auto; height:auto; opacity:1;}
+    }
+    /* @keyframes wedding{
+        from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+        to { margin-left:22.8%; margin-top:9.8%; width:auto; height:auto; opacity:1;}
+    } */
+    @keyframes contact{
+        from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+        to { margin-left:20.5%; margin-top:13.8%; width:auto; height:auto; opacity:1;}
+    }
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+    .logo_ini{
+        position:absolute;
+        z-index:10;
+        width:20%;
+        margin-top:60%;
+        margin-left:42%;
+        animation:animacion 3s linear;
+        animation-delay:3s;
+        animation-fill-mode:forwards;
+        background-color:transparent;
+    }
+    @keyframes animacion{
+        from { width:20%; height:auto; margin-left:42%; margin-top:60%;}
+        25% {  width:21%; height:auto;}
+        50% {  width:23%; height:auto;}
+        75% {  width:24%; height:auto;}
+        to {   width:25%; height:auto; margin-left:-1%; margin-top:-7%; }
+    }
+
+    .icono_index a{
+        text-decoration: none;
+    }
+    .icono_index img{
+        width: 8px;
+        float: left;
+        margin-top: 10px;
+    }
+    .icono_index span{
+        font-family: 'Montserrat-SemiBold';
+        list-style: none;
+        color:#ffffff;
+        font-size:18px;
+        letter-spacing: 1px;
+        margin-left: 5px;
+        box-shadow: 0 12px 12px -3px rgba(0, 0, 0, 0.603), 0 8px 10px -5px rgba(3, 179, 248, 0.876);
+        padding: .5rem;
+    }
+    .icono_index span:hover{
+        color:rgba(29,179,231,1.00);
+    }
+
+    @keyframes  corporate{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+            to { margin-left:24.8%; margin-top:1%; width:auto; height:auto; opacity:1;}
+        }
+    @keyframes about{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+            to { margin-left:24%; margin-top:7.8%; width:auto; height:auto; opacity:1;}
+        }
+    /* @keyframes wedding{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+            to { margin-left:22.8%; margin-top:9.8%; width:auto; height:auto; opacity:1;}
+        } */
+    @keyframes contact{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+            to { margin-left:20.5%; margin-top:13.8%; width:auto; height:auto; opacity:1;}
+        }
+
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+    .logo_ini{
+        position:absolute;
+        z-index:10;
+        width:20%;
+        margin-top:75%;
+        margin-left:42.8%;
+        animation:animacion 3s linear;
+        animation-delay:3s;
+        animation-fill-mode:forwards;
+        background-color:transparent;
+    }
+    @keyframes animacion{
+        from { width:20%; height:auto; margin-left:42.8%; margin-top:75%;}
+        25% {  width:21%; height:auto;}
+        50% {  width:23%; height:auto;}
+        75% {  width:24%; height:auto;}
+        to {   width:25%; height:auto; margin-left:.5%; margin-top:-7.6%; }
+    }
+
+    .icono_index a{
+        text-decoration: none;
+    }
+    .icono_index img{
+        width: 8px;
+        float: left;
+        margin-top: 8px;
+    }
+    .icono_index span{
+        font-family: 'Montserrat-SemiBold';
+        list-style: none;
+        color:#ffffff;
+        font-size:1.2rem;
+        letter-spacing: 1px;
+        margin-left: 5px;
+        margin: .2rem;
+        padding: .1rem;
+    }
+    .icono_index span:hover{
+        color:rgba(29,179,231,1.00);
+    }
+
+
+
+    @keyframes corporate{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+            to { margin-left:27%; margin-top:1.5%; width:auto; height:auto; opacity:1;}
+        }
+    /* @keyframes about{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+            to { margin-left:25%; margin-top:5%; width:auto; height:auto; opacity:1;}
+        } */
+    /* @keyframes wedding{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px;  }
+            to { margin-left:22.8%; margin-top:9.8%; width:auto; height:auto; opacity:1;}
+        } */
+    @keyframes contact{
+            from { margin-left:0px; margin-top:0px; width:0px; height:0px; }
+            to { margin-left:23%; margin-top:11%; width:auto; height:auto; opacity:1;}
+        }
+
+
+}

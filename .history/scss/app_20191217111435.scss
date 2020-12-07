@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "LibelSuit";
+    src: url("../fonts/libel-suit-rg-webfont.eot");
+    src: url("../fonts/libel-suit-rg-webfont.eot?#amoLibelSuit") format("embedded-opentype"),
+    url("../fonts/libel-suit-rg-webfont.woff") format("woff"),
+    url("../fonts/libel-suit-rg-webfont.ttf") format("truetype"),
+    url("../fonts/libel-suit-rg-webfont.svg#libel_suitregular") format("svg");
+}
+
+.site-navbar .site-navigation .site-menu > li > a {
+    color: #fff !important;
+    font-family: "LibelSuit"!important;
+  }

@@ -1,0 +1,60 @@
+/*-----about us-------------------------------*/
+.contenedor-about{
+    margin-top: 90px;
+    @include tablet(){
+        margin-top: 160px;
+    }
+}
+.container_we{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about{
+    flex: 0 0 calc(100%);
+}
+.img-about{
+    @include desktop(){
+        display: flex;
+        justify-content:  center;
+        width: 600px;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+.caja_about{
+    span{
+        font-size: 1.8rem;
+        font-family: 'Montserrat-SemiBold';
+    }
+    p{
+        font-size: 1;
+        padding: .3rem;
+        font-family: 'Montserrat-Light';
+        line-height: 2rem !important;
+    }
+
+}
+
+
+.contenedor_mision{
+    flex: 0 0 calc(100%);
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    span{
+        font-size: 1.8rem;
+        font-family: 'Montserrat-SemiBold';
+
+    }
+    p{
+        font-size: 1rem;
+        padding: .3rem;
+        font-family: 'Montserrat-Light';
+        line-height: 2rem !important;
+    }
+
+}
+
+

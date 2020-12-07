@@ -1,0 +1,603 @@
+@import 'variables';
+@import 'mixins';
+
+body{
+	background: url(../images/fondo.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+h1{
+    font-size: 2.5rem!important;
+    font-weight: 500!important;
+}
+
+h3{
+  font-size: 1.5rem!important;
+  font-weight: 400!important;
+  @include tablet(){
+    font-size: 3rem!important;
+    font-weight: 400!important;
+  }
+  @include desktop(){
+    font-size: 2.2rem!important;
+    font-weight: 400!important;
+  }
+}
+/*=============================================
+  Menu navbar
+=============================================*/
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: $colorPrincipal;
+}
+  .site-navbar .site-navigation .site-menu > li > a:hover {
+    color: $colorBlanco !important;
+}
+
+.site-navbar .site-navigation .site-menu > li > a {
+    color: $colorBlanco !important;
+    font-family: "LibelSuit"!important;
+    letter-spacing: 1.5px!important;
+    font-weight: 300!important;
+    font-size: 1.1rem!important;
+}
+.site-navbar .site-navigation .site-menu .has-children .dropdown > li > a:hover{
+    background-color: $colorPrincipal!important;
+    color: $colorBlanco!important;
+}
+//media query menu muy pequeña tipografias y tamaños letras
+@media (max-width:767px){
+    .site-mobile-menu .site-nav-wrap > li > a{
+        font-family: "LibelSuit"!important;
+        letter-spacing: 0.8px!important;
+        font-size: 1.2rem!important;
+        color: #212529cc!important;
+    }
+    .site-mobile-menu .site-nav-wrap a{
+        font-family: "LibelSuit"!important;
+        letter-spacing: 0.5px!important;
+        font-size: 1rem!important; 
+        color: #212529cc!important;  
+    }
+}
+
+@media (max-width:1024px) and (min-width:992px){
+  .hero_title{
+    display: none;
+  }
+}
+.hero_title{
+    @include desktop(){
+        display: none;
+    }
+    text-align: center;
+    margin-top: 70px;
+    h1{
+        @include telefono(){
+            font-size: 2rem!important;
+        }
+        @include tablet(){
+            font-size: 5rem!important;
+        }
+        
+        padding-top: 30px;
+        font-size: 1.5rem!important;
+    }
+    h2{
+        @include tablet(){
+          font-size: 1.5rem;
+          line-height: 2rem!important;
+
+        }
+        font-size: 1.2rem;
+        text-align: justify;
+        font-weight: normal;
+        line-height: 1.5rem!important;
+        margin-bottom: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        padding: 5px;
+    }
+}
+
+
+/*=============================================
+  menu galeria hover de secction
+=============================================*/
+.galeria{
+    margin-top: 65px;
+}
+.contenedor-images{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+  }
+  .contenedor-images .imagen{
+    width: 25%;
+    position: relative;
+    height: 277px;
+    margin-bottom: 0;
+    /*box-shadow: 0px 0px 3px 0px rgba(0,0,0,.75);*/
+  }
+  .imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0,118,192,0.781);
+    width: 100%;
+    height: 0%;
+    transition: .5s ease;
+    overflow: hidden;
+  }
+  .overlay span{
+    color: $colorBlanco;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+  
+  }
+  .imagen:hover .overlay{
+   /* height: 100%;
+    cursor: pointer;*/
+    top:0;
+    bottom:0;
+    height: 100%;
+    cursor: pointer;
+  }
+
+
+/*=============================================
+ secction contenido principal
+=============================================*/
+.title_events{
+    font-size: 20px;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 5px;
+  }
+  .btn.btn-black{
+    color: $colorBlanco;
+    background-color: $colorPrincipal !important;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .btn.btn-black:hover{
+    color: $colorBlanco;
+  
+  }
+
+
+/*=============================================
+  secction de fondo desing
+=============================================*/
+.fondo{
+    background: url(../images/fondo-events.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.service{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*=============================================
+  secction de thematic events
+=============================================*/
+.thematic-events{
+  margin-top: 105px;
+  margin-bottom: 20px;
+
+  @include tablet(){
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+  @include desktop(){
+    margin-bottom: 40px;
+  }
+
+}
+.container_galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include tablet(){
+    margin-bottom: 60px;
+  }
+  @include desktop(){
+    margin-bottom: 0px;
+  }
+}
+.galeria_imagen{
+  flex: 0 0 calc(100% - 0.2rem);
+  margin-bottom: 1.6rem!important;
+  .overlay-galery{
+    width: 100%;
+    height: 100%;
+  }
+
+  @include telefono(){
+    flex: 0 0 calc(49% - 0.5rem);
+  }
+
+  @include desktop(){
+    flex: 0 0 calc(33% - 1rem);
+    .overlay-galery{
+      width: 100%;
+      height: 0%;
+    }
+  }
+
+}
+.galeria_imagen img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.galeria_imagen{
+  position: relative;
+  margin-bottom: 0;
+}
+.galeria_imagen img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2);
+  border-radius: 3px;
+}
+.overlay-galery{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*background: rgba(0,118,192,0.781);*/
+  background: rgba(18, 19, 19, 0.53);
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+  overflow: hidden;
+}
+.overlay-galery span{
+  color: $colorBlanco;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-serif!important;
+  font-weight: 600;
+
+}
+.galeria_imagen:hover .overlay-galery{
+  height: 100%;
+  cursor: pointer;
+}
+
+/*=============================================
+  galeria de imagen modal
+=============================================*/
+.container_modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.modal_img{
+  width: 300px!important;
+  height: 250px!important;
+  @include tablet(){
+    width: 600px!important;
+    height: 453px!important;
+  }
+  @include desktop(){
+    width: 630px!important;
+    height: 453px!important;
+  }
+
+}
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(12, 34, 60, 0.93);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.imagen_modal{
+  box-shadow: 0px 0px 0px 10px $colorBlanco;
+
+}
+.container_modal{
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 3px 3px 5px 0px rgb(12, 34, 60);
+  -moz-box-shadow: 3px 3px 5px 0px rgb(12, 34, 60);
+  box-shadow:3px 3px 3px 0px rgb(12, 34, 60);
+}
+.modal_botton{
+  width: 50px;
+  height: 50px;
+  color: $colorBlanco;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: monospace;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+
+/*=============================================
+  secction weding banners
+=============================================*/
+.hero{
+  min-height: 24rem;
+  background-size: cover;
+  color: $colorBlanco;
+  display: flex;
+  align-items: center;
+  @include background-imagen('../images/fondo-events.jpg');
+  margin-top: 68px;
+  .contenido-hero{
+    flex: 1;
+
+      h2{
+        text-align:  center;
+        font-weight: 600;
+        font-size: 2.1rem;
+      }
+      p{
+        font-size: 1rem;
+        text-align: center;
+        font-weight: normal;
+        line-height: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin-top: 10px;
+
+      }
+
+  }
+
+}
+
+.wedding{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.wedding .cont-wedding{
+  flex: 0 0 calc(100%);
+  text-align: center;
+  h1{
+    font-size: 1.5rem!important;
+  }
+  p{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 15px;
+  }
+}
+/*=============================================
+  secction galey wedding
+=============================================*/
+.grid {
+	overflow: hidden;
+	margin: 0;
+	padding: 0 0 0 0;
+	width: 100%;
+	list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.grid figure {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+  /*margin: -0.135em;*/
+  margin: 0;
+  padding: 0;
+	/*width: 33.333%;*/
+	height: 400px;
+	background: $colorPrincipal;
+	text-align: center;
+  cursor: pointer;
+  flex: 0 0 calc(33.333%);
+}
+
+.grid figure img {
+	position: relative;
+	/*display: block;*/
+	min-height: 100%;
+	opacity: 0.9;
+}
+
+.grid figure figcaption {
+	/*padding: 2em;*/
+	color: $colorBlanco;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}*/
+/*
+.grid figure h2 span {
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	
+}*/
+/*
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+*/
+/*
+.grid figure p {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 15px;
+}
+*/
+/***** efectos de galery *****/
+figure.effect-oscar {
+	background: $colorNegro;
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+	padding: 3em;
+	background-color: rgba(34, 34, 33, 0.5);
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+/*modificacion realizada de texto*/
+figure.effect-oscar figcaption h3{
+  margin: 20% 0 10px 0;
+}
+figure.effect-oscar figcaption .title-wedding{
+  font-family: 'Montserrat', sans-serif;
+  color: $colorBlanco;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid $colorBlanco;
+	content: '';
+}
+
+figure.effect-oscar h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+    //background-color: rgba(58,52,42,0);
+  background-color: #0082A6AB;
+}
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}
+/*=============================================
+  secction footer
+=============================================*/
+.footer{
+  border-top: 1px solid darken($colorGris, 10);
+  padding-top: 2rem;
+  background-color: #000000cf;
+  .contenedor-footer{
+      display: flex;
+      flex-direction: column;
+      @include telefono{
+          flex-direction: row;
+      }
+  }
+
+}
+.menu{
+  @include menus();
+}

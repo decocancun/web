@@ -1,0 +1,62 @@
+@font-face{
+    font-family: "LibelSuit";
+    src: url("../fonts/libel-suit-rg-webfont.eot");
+    src: url("../fonts/libel-suit-rg-webfont.eot?#amoLibelSuit") format("embedded-opentype"),
+    url("../fonts/libel-suit-rg-webfont.woff") format("woff"),
+    url("../fonts/libel-suit-rg-webfont.ttf") format("truetype"),
+    url("../fonts/libel-suit-rg-webfont.svg#libel_suitregular") format("svg");
+}
+
+@mixin background-imagen($imagen) {
+    background-image: url($imagen);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*Media Queries*/
+@mixin telefono{
+    @media only screen  and (min-width:#{$telefono}){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media only screen  and (min-width:#{$tablet}){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media only screen  and (min-width:#{$desktop}){
+        @content;
+    }
+}
+/*menus de navegacion de footer*/
+@mixin menus {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    flex: 1;
+    @include desktop(){
+        flex: 0 0 calc(30% - 1rem);
+    }
+    a{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        color: $colorBlanco;
+        text-decoration: none;
+        margin-bottom: .5rem;
+    }
+    span{
+        color: $colorGris;
+        font-size: 0.9rem;
+        margin-bottom: .5rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .fa-facebook-square{
+        font-size: 1.2rem;
+    }
+    .fa-instagram{
+        font-size: 1.3rem;
+        margin-left: 15px;
+    }
+}

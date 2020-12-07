@@ -1,0 +1,58 @@
+/*contac--------/*/
+.contenedor-contact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+.contenedor_contact{
+    width: 450px;
+    box-shadow: 0 0 10px 4px #ddd !important;
+    flex: 2;
+}
+.info-contact{
+    flex: 0 0 calc(30%);
+}
+
+.title_contac{
+    width: 100%;
+    height: 110px;
+    background: #00B2E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title_contac h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.buton_enviar{
+    background-color: #00A0CC!important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 20px!important;
+    font-weight: 500;
+    color: white!important;
+}
+.buton_enviar:hover{
+    color: $colorBlanco;
+    background-color: $colorPrincipal;
+}
+
+.branch-office{
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+.info-contact{
+    p{
+        margin-left: 5px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    span{
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+}

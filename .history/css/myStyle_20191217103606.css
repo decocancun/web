@@ -1,0 +1,704 @@
+@font-face{
+  
+  font-family: "LibelSuit";
+  src: url("../fonts/libel-suit-rg-webfont.eot");
+  src: url("../fonts/libel-suit-rg-webfont.eot?#amoLibelSuit") format("embedded-opentype"),
+  url("../fonts/libel-suit-rg-webfont.woff") format("woff"),
+  url("../fonts/libel-suit-rg-webfont.ttf") format("truetype"),
+  url("../fonts/libel-suit-rg-webfont.svg#libel_suitregular") format("svg");
+}
+
+
+
+/*=============================================
+  Menu navbar
+=============================================*/
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  background: #00b2e5;
+  /*background: #011015c4;*/
+
+}
+.site-navbar .site-navigation .site-menu > li > a:hover {
+  color: #fff !important;
+
+}
+/*=============================================
+logo
+=============================================*/
+.circulo {
+  width: 116px;
+  height: 116px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: -35PX;
+  background: #00B4E8;
+  position: absolute;
+  z-index: 10;
+  margin-left: -10%
+}
+.logo_img{
+  max-width: 101px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -11px;
+  margin-top: -28px;
+}
+.logo_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.log{
+  width: 65px;
+}
+.log img{
+  width: 58px;
+  position: absolute;
+  top: -27px;
+}
+/*
+.log a{
+  margin-left: 4px;
+  letter-spacing: 3pt;
+  text-align: center;
+  color: #Fff;
+  font-size: 20px;
+  margin-top: 7px;
+  font-weight: 100;
+  font-family: "LibelSuit";
+}
+.log p{
+  color: #ffffffb0;
+  font-size: 10px;
+  margin-top: -13px;
+  margin-left: 7px;font-family: 'Open Sans', sans-serif;
+}*/
+
+/*=============================================
+slider de about
+=============================================*/
+  .carousel-inner{
+    background: black;
+  }
+  .sl_about{
+
+    opacity: 0.4;
+  }
+  .slider_about{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif!important;
+  }
+  .des_crip_about{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif!important;
+    letter-spacing: 1px;
+  }
+  
+/*=============================================
+GALERIA cada seccion
+=============================================*/
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.modal-backdrop
+{
+    opacity:0.8 !important;
+}
+
+/*=============================================
+submenu de secction
+=============================================*/
+.sub-menu{
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+
+.sub-menu ul{
+
+list-style: none;
+text-align: right;
+
+
+}
+.sub-menu ul li{
+
+display: inline-block;
+
+}
+.sub-menu ul li span a {
+  font-family: 'Lora', serif;
+  font-size: 16px !important;
+  font-weight: 500;
+}
+.title_general{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
+/*section renders*/
+.renders_1{
+  width: 100%;
+  height: 605px;
+  margin-bottom: 2px;
+}
+.renders_1 img{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(21, 0, 0);
+  filter: brightness(0.9);
+}
+.renders_2{
+  width: 100%;
+  height: 300px;
+  margin-top: 0px; 
+  margin-bottom: 15px;
+}
+.renders_2 img{
+  width: 100%;
+  height: 100%;
+}
+.renders_3{
+  width: 100%;
+  height: 300px;
+}
+.renders_3 img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*=============================================
+ secction contenido principal
+=============================================*/
+.title_events{
+
+  font-size: 20px;
+  text-align: justify;
+  font-weight: normal;
+  line-height: 1.5em;
+
+  margin-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  padding: 5px;
+}
+
+
+.btn.btn-black{
+  color: #fff;
+  background-color: #5db1e4!important; 
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 18px;
+}
+
+.btn.btn-black:hover{
+  color: #fff;
+  background-color: #fff;
+
+}
+.cont_gl{
+  margin-top: 120px;
+}
+/*=============================================
+  menu galeria hover de secction
+=============================================*/
+
+.contenedor-images{
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+.contenedor-images .imagen{
+  width: 25%;
+  position: relative;
+  height: 277px;
+  margin-bottom: 0;
+  /*box-shadow: 0px 0px 3px 0px rgba(0,0,0,.75);*/
+}
+.imagen img{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,118,192,0.781);
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+  overflow: hidden;
+}
+.overlay span{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: "LibelSuit";
+  font-weight: 500;
+  letter-spacing: 1px;
+
+}
+.imagen:hover .overlay{
+  height: 100%;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+/*=============================================
+  secction de fondo desing
+=============================================*/
+.fondo{
+background: url(../images/fondo-events.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+
+/*---section corporate event styles---*/
+.line-height-1{
+  font-weight: 300;
+  padding: 3px;
+}
+.thematic{
+  padding: 5px;
+}
+
+.service{
+  margin-top: 120px;
+}
+.img_corporate_1{
+  width:200px;
+  height: 150px;
+  display: inline-block;
+
+}
+.img_corporate_1 img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*---section corporate event lounge---*/
+.site-section-heading.text-center:after {
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  content: "";
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  height: 1px;
+  background: #b3b3b3!important;
+}
+.gallery-container{
+  margin-top: 110px;
+}
+.tz-gallery{
+  margin-bottom: 20px;
+}
+.title_lounge{
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 2px;
+  font-weight: 500;
+}
+/*---Section Branding desing-------*/
+.iconos_img{
+  margin:0; padding: 0; border:0;
+}
+.iconos_img li{
+  list-style: none;
+  display: inline-block;
+
+}
+.list_Arcos{
+  padding: 20px;
+  margin: 0;
+}
+.list_Arcos li{
+  margin:0; padding: 0; border:0;
+}
+.img_dis{
+  margin-top: 22px;
+}
+/*----About---------------*/
+.tm-mg{
+  padding: 20px 50px;
+  margin-top: 130px;
+}
+.about_title{
+  padding: 5px;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif!important;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.lead{
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #3e3a3ac7;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.mision, .vision{
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif!important;
+  font-weight: 500;
+  padding: 5px;
+}
+.img_about img{
+  margin-bottom: 30px;
+}
+/*---Contact------------------*/
+.title-contact h1{
+  padding: 20px 50px;
+  margin-top: 130px;
+  font-family: 'Raleway', sans-serif!important;
+  font-size: 2rem;
+  margin-left: 156px;
+  margin-bottom: -50px;
+}
+.success{
+   color: green;
+   text-align:center;
+   font-size: 30px;
+    font-family: 'Raleway', sans-serif!important;
+}
+.font_title{
+  font-family: 'Raleway', sans-serif!important;
+  font-size: 25px;
+  font-weight: 500;
+}
+label{
+  font-family: 'Raleway', sans-serif!important;
+  font-size: 20px;
+} 
+option{
+  font-family: 'Raleway', sans-serif!important;
+  font-size: 16px;
+}
+.help-block{
+  font-family: 'Raleway', sans-serif!important;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.branch{
+  padding: 0;
+  margin: 0;
+  margin-left: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.branch li{
+  padding: 2px;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 20px;
+}
+/*-------validation form--*/
+.form-error{
+  margin-left: 14px;
+  font-size: 12px;
+  padding-top: 5px;
+  color: red;
+}
+/*=============================================
+  secction footer
+=============================================*/
+.footer-n {
+  padding: 2em 0 !important;
+}
+.redes span{
+  color: #b3b3b3 !important;
+  font-size: 25px;
+}
+.copy-rig p{
+  text-align: center;
+  color: #b3b3b3;
+  font-family: 'Raleway', sans-serif!important;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+@media (min-width:1200px){
+  /*=============================================
+  menu galeria hover de secction
+=============================================*/
+  .galeria{
+    margin-top: 70px;
+  }
+  .sub-menu ul li span a{
+      background-color: #00b2e5;
+      color: white;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 3px;
+      
+  }
+  .site-section-heading {
+    font-size: 3rem; 
+  } 
+  .site-section-heading.text-center:after {
+    width:410px;
+  }
+  .iconos_img li img{
+
+    width: 110PX;
+    margin: 25px;
+    
+  }
+  .descrip_slide{
+    display: none;
+  }
+  .title_centerpieces h1{
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width:1199px) and (min-width:992px){
+  /*=============================================
+  menu galeria hover de secction
+  =============================================*/
+  .galeria{
+    margin-top: 65px;
+
+  }
+  .sub-menu ul li span a{
+      background-color: #757575;
+      color: white;
+      font-size: 18px;
+      padding: 8px;
+      border-radius: 3px;
+      
+  }
+  .renders_1{
+  width: 100%;
+  height: 555px;
+  }
+  .site-section-heading.text-center:after {
+    width:250px;
+  }
+  .iconos_img li img{
+    width: 150PX;
+    margin: 25px;
+    
+  }
+  .circulo {
+    width: 109px;
+    height: 109px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -35PX;
+    background: #00B2E5;
+    position: absolute;
+    z-index: 10;
+    margin-left: -5%;
+    
+  }
+  .logo_img{
+  max-width: 101px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -3px;
+  margin-top: -31px;
+  }
+
+
+}
+
+@media (max-width:991px) and (min-width:768px){
+  .circulo {
+    width: 109px;
+    height: 109px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -35PX;
+    background: #00B2E5;
+    position: absolute;
+    z-index: 10;
+    margin-left: -5%;
+    
+  }
+  .logo_img{
+  max-width: 101px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -1px;
+  margin-top: -31px;
+  }
+
+}
+
+
+@media (max-width:767px){
+  /*=============================================
+  menu galeria hover de secction
+  =============================================*/
+  .site-section-heading{
+    font-size: 25px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+  }
+  .galeria{
+    margin-top: 65px;
+
+  }
+  .overlay span{
+    font-size: 18px;
+  }
+
+  .cont_gl {
+      margin-top: 90px;
+  }
+    .sub-menu ul li{
+      display: inline-block;
+      padding-top: 10px;
+
+    }
+    .sub-menu ul{
+
+        list-style: none;
+        text-align: center;
+    }
+
+  .sub-menu ul li span a{
+    background-color: #757575;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .renders_1{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+  }
+  .descrip_slide{
+    display: none;
+  }
+  .site-section-heading.text-center:after {
+    width:250px;
+  }
+  .iconos_img{
+    margin:0; padding: 0; border:0;
+    text-align: center;
+  }
+  .iconos_img li img{
+    width: 130PX;
+    margin: 25px;
+  }
+  .content_desing h2 .lead{
+    text-align: center;
+  }
+  .card{
+    margin-top: 10px;
+  }
+  .mb-3{
+    margin-bottom: 0rem!important;
+  }
+  .circulo,.logo_img,.dis_logo,.circulo{
+    display: none;
+  }
+  .log{
+    display: block;
+  }
+
+  #slider,#event_slide,#event_imge,#slide_ceremony{
+    display: none;
+  }
+  #title_event{
+    font-size: 30px;
+  }
+  #certer_title{
+    font-size: 35px;
+  }
+  .title-contact h1{
+    font-size: 25px;
+  }
+
+  .title-ceremony{
+    margin-top: 20px;
+  }
+
+  .tz-gallery{
+    margin-bottom: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
